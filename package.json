@@ -1,0 +1,21 @@
+{
+  "name": "lxr-tutorials",
+  "private": true,
+  "description": "LeanIX Custom Report Tutorials",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/leanix-public/lxr-tutorials.git"
+  },
+  "author": "LeanIX GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leanix-public/lxr-tutorials/issues"
+  },
+  "homepage": "https://github.com/leanix-public/lxr-tutorials#readme",
+  "workspaces": [
+    "packages/*"
+  ]
+}
