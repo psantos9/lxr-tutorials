@@ -21,7 +21,7 @@
     "vite": "^3.2.3",
     "vite-plugin-lxr": "^0.0.8"
   },
-  "name": "01_alpinejs_table_facets",
+  "name": "01_alpinejs_table",
   "author": "LeanIX GmbH",
   "description": "Tutorial on how to query the inventory and show results as a table using AlpineJS",
   "leanixReport": {
