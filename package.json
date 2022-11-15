@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/leanix-public/lxr-tutorials#readme",
   "workspaces": [
-    "packages/*"
+    "examples/*"
   ]
 }
