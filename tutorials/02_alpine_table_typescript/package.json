@@ -19,9 +19,9 @@
     "vite": "^3.2.3",
     "vite-plugin-lxr": "^0.0.8"
   },
-  "name": "02_alpinejs_table_typescript",
+  "name": "02_alpine_table_typescript",
   "author": "LeanIX GmbH",
-  "description": "Tutorial on how to query the inventory and show results as table using AlpineJS and Typescript",
+  "description": "Tutorial on how to query the inventory and show results as table using Alpine and Typescript",
   "leanixReport": {
     "id": "net.leanix.report.tutorial.02",
     "title": "Tutorial 02",
