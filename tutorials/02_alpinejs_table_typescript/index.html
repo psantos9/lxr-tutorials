@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial 01</title>
+  <script type="module" src="/src/main.ts"></script>
+</head>
+
+<body>
+  <table x-data="lxr" class="text-xs border-separate border-spacing-0">
+    <thead>
+      <tr class="sticky top-0">
+        <template x-for="column in columns">
+          <th class="bg-gray-100 border-r first:border-l border-y font-normal px-1" x-text="column.label">
+          </th>
+        </template>
+      </tr>
+    </thead>
+    <tbody>
+      <template x-for="factSheet in factSheets">
+        <tr>
+          <template x-for="column in columns">
+            <td class="border-b border-l last:border-r text-left px-1">
+              <template x-if="column.key === 'displayName'">
+                <span class="text-[#1666ee] hover:underline cursor-pointer" x-text="factSheet.displayName"
+                  x-on:click="openSidePane(factSheet)">
+                </span>
+              </template>
+              <template x-if="column.key !== 'displayName'">
+                <div x-text="column?.mapFn?.(factSheet) ?? factSheet[column.key]"></div>
+              </template>
+            </td>
+          </template>
+        </tr>
+      </template>
+    </tbody>
+  </table>
+</body>
+
+</html>
